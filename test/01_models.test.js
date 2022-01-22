@@ -9,7 +9,7 @@ describe('Models', function () {
     return db.sync({ force: true });
   });
 
-  describe.only('The `Students` model', function () {
+  describe('The `Students` model', function () {
     //initial force sync to clear the db
 
     //create student BEFORE EACH test
@@ -109,7 +109,7 @@ describe('Models', function () {
 
     //end of `The Students model` describe block
   });
-  describe('The `Test` model', function () {
+  describe.only('The `Test` model', function () {
     let test;
     let subject = 'Tree-climbing';
     let grade = 79;
